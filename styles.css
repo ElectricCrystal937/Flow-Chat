@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f1f7; /* Couleur de fond pastel */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-bottom: 5px solid #8abff4;
+    animation: fadeIn 1s ease;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.coming-soon {
+    background-color: #ffe1e1; /* Couleur pastel pour la section Coming Soon */
+    border: 2px dashed #ff8b8b; /* Bordure en pointillé */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+    animation: slideIn 0.5s ease;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.feature {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.developer-info {
+    background-color: #ffffff; /* Couleur blanche pour la section Développeur */
+    border: 2px solid #a1c4fd; /* Bordure */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+    animation: slideIn 0.5s ease;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
