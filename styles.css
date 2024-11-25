@@ -185,3 +185,67 @@ footer {
         margin: 10px auto;
     }
 }
+
+.info-page {
+    background-color: #ffffff; /* Couleur blanche pour la section Développeur */
+    border: 2px solid #a1c4fd; /* Bordure */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+    animation: slideIn 0.5s ease;
+}
+
+.info-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-page h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-page p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.info-page a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff8b8b;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-page a:hover {
+    background-color: #6aa3d6;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries - Mobile optimization */
+@media (max-width: 768px) {
+    .info-page {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
